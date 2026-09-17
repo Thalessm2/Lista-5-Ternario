@@ -1,0 +1,14 @@
+using System;
+
+class ProgramE
+{
+    static void Main()
+    {
+        Console.Write("Digite true ou false: ");
+        bool condicao = bool.Parse(Console.ReadLine());
+
+        string resultado = condicao ? "A condição é verdadeira" : "A condição é falsa";
+
+        Console.WriteLine(resultado);
+    }
+}
