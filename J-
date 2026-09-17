@@ -1,0 +1,14 @@
+using System;
+
+class ProgramJ
+{
+    static void Main()
+    {
+        Console.Write("Digite um texto ou deixe vazio: ");
+        string texto = Console.ReadLine();
+
+        string resultado = (texto == null) ? "A variável é nula" : "A variável não é nula";
+
+        Console.WriteLine(resultado);
+    }
+}
