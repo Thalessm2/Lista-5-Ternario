@@ -1,0 +1,17 @@
+using System;
+
+class ProgramH
+{
+    static void Main()
+    {
+        Console.Write("Digite um número: ");
+        string texto = Console.ReadLine();
+
+        int numero;
+        bool valido = int.TryParse(texto, out numero);
+
+        string resultado = valido ? "Número convertido: " + numero : "Não é um número válido";
+
+        Console.WriteLine(resultado);
+    }
+}
