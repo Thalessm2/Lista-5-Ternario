@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+
+class ProgramC
+{
+    static void Main()
+    {
+        List<int> lista = new List<int>();
+
+        Console.Write("Digite um número para adicionar à lista (ou 0 para não adicionar): ");
+        int numero = int.Parse(Console.ReadLine());
+
+        if (numero != 0)
+        {
+            lista.Add(numero);
+        }
+
+        string resultado = (lista.Count == 0) ? "Lista vazia" : "Lista não vazia";
+
+        Console.WriteLine(resultado);
+    }
+}
